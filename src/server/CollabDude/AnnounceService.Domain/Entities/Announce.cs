@@ -22,6 +22,7 @@ public class Announce : BaseEntity
     public virtual Category Category { get; set; } = null!;
     public virtual ICollection<Comments> Comments { get; set; } = new List<Comments>();
     public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
+    public virtual ICollection<AnnounceTag> AnnounceTags { get; set; } = new List<AnnounceTag>();
 }
 
 public enum AnnounceStatus
